@@ -144,7 +144,10 @@ main form .step .input{
     flex-direction: column;
     margin-bottom: 10px;
 }
-
+main form .steps .step-1{
+    position: relative;
+    /* left: -850px; */
+}
 main form .steps .step-1 input{
     width: 400px;
     height: 40px;
@@ -173,6 +176,7 @@ main form .btn{
 /* Step-2 design */
 main form .steps .step-2{    
     position: relative;
+    /* left: -450px; */
     left: 350px;
 }
 main form .steps .step-2 .content .box{
