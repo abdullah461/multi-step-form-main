@@ -37,11 +37,12 @@ body{
     display: flex;
     min-height: 80vh;
     border-radius: 20px;
-    width: 1000px;
+    width: 800px;
     background-color: #fff;
     padding: 15px;
     margin-top: 4rem;
-    /* overflow: hidden; */
+    gap: 50px;
+    overflow: hidden;
 }
 
 /* sidebar design start */
@@ -73,6 +74,8 @@ aside .step .no{
     margin-right: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
+    color: white;
+    /* cursor: pointer; */
 }
 aside .step .no1{
     background-color: var(--numbg);
@@ -107,22 +110,28 @@ aside .step:nth-child(3){
 }
 
 /* main content design  */
-main{
-    display: flex;
+ main{
+    /* display: flex;
     justify-content: center;
-    padding: 10px 0px 0px 100px;
-}
+    padding: 10px 0px 0px 100px; */
+} 
 main form{
-    width: 1000px;
+    /* width: 1000px; */
+    width: auto;
 }
 main form .steps{
     display: flex;
+    width: fit-content;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
 }
 main form .step{
     display: flex;
     flex-direction: column;
     padding: 20px;
     border-radius: 20px;
+    
     
 }
 main form .step .heading{
@@ -144,10 +153,11 @@ main form .step .input{
     flex-direction: column;
     margin-bottom: 10px;
 }
-main form .steps .step-1{
+ main form .steps .step-1{
     position: relative;
-    /* left: -850px; */
-}
+    /* left: -850px;*/
+     
+} 
 main form .steps .step-1 input{
     width: 400px;
     height: 40px;
@@ -174,11 +184,12 @@ main form .btn{
 
 
 /* Step-2 design */
-main form .steps .step-2{    
+ main form .steps .step-2{    
     position: relative;
-    /* left: -450px; */
+     /*left: -450px; 
     left: 350px;
-}
+     visibility: hidden;  */
+} 
 main form .steps .step-2 .content .box{
     height: 140px;
     width: 100px;
@@ -255,7 +266,7 @@ main form .steps .step-2 .toggle .btn-box .toggle-btn{
 main form .steps .step-2 .btn{
     display: flex;
     justify-content: space-between;
-    margin-top: 45px;
+    margin-top: 60px;
 }
 main form .steps .step-2 .btn button:nth-child(1){
     background-color: unset;
@@ -267,10 +278,10 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 /* step 3 css */
-main form .steps .step-3{    
-    position: relative;
-    left: 400px;
-}
+ main form .steps .step-3{    
+     position: relative;
+   /* left: 400px; */
+} 
 main form .steps .step-3 .boxes{
     display: flex;
     width: 400px;
@@ -319,11 +330,11 @@ font-size: 12px;
 }
 
 /* step 4 css */
-main form .steps .step-4{    
+ main form .steps .step-4{    
     position: relative;
-    left: 400px;
-    min-width: 500px;
-}
+    /*left: 400px;
+    min-width: 500px; */
+} 
 main form .steps .step-4 .btn{
     display: flex;
     justify-content: space-between;
@@ -342,8 +353,8 @@ main form .steps .step-4 .btn button:nth-child(2){
 
 /* step 5 css  */
 main form .steps .step-5{    
-    position: relative;
-    left: 400px;
+    position: relative; 
+    /* left: 400px; */
     min-width: 400px;
     text-align: center;
     display: flex;
@@ -356,4 +367,20 @@ main form .steps .step-5 h3{
 main form .steps .step-5 p{
    font-family: 'Ubuntu', sans-serif; 
     color: var(--maintext);
+}
+
+
+@media screen and (max-width: 375px) {
+    .multi-step-form{
+        display: block;
+    }
+    .steps .step{
+        transform: scale(1);
+    }
+    main form .steps .step-1 input{
+        width: 300px;
+    }
+    .step.step-1 {
+        width: 300px;
+    }
 }
